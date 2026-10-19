@@ -51,7 +51,7 @@ Installation
    .venv\Scripts\Activate.ps1
 2. Install the dependency:
    python -m pip install -r requirements.txt
-3. Configure MySQL. The current source contains hard-coded MySQL connection credentials in connect_database(). Before publishing or running it on another machine, remove those values and update the connection function to use local configuration or environment variables. Never commit real database passwords.
+3. Configure MySQL. The current source contains hard-coded MySQL connection credentials in connect_database(). 
 4. After checking that the connection and database initialization are configured correctly, run:
    python main.py
 The source attempts to create the jobtrack_db database and its tables at startup. The MySQL account needs permission to create the database.
